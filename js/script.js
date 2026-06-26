@@ -1,3 +1,29 @@
+const menuBtn = document.getElementById("menuBtn");
+const closeMenuBtn = document.getElementById("closeMenuBtn");
+const sidebar = document.getElementById("mobileSidebar");
+const overlay = document.getElementById("mobileOverlay");
+
+function openMenu() {
+  sidebar.style.transform = "translateX(0)";
+  overlay.classList.remove("opacity-0", "pointer-events-none");
+  overlay.classList.add("opacity-100");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMenu() {
+  sidebar.style.transform = "translateX(-100%)";
+  overlay.classList.add("opacity-0", "pointer-events-none");
+  overlay.classList.remove("opacity-100");
+  document.body.style.overflow = "";
+}
+
+menuBtn.addEventListener("click", openMenu);
+closeMenuBtn.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMenu();
+});
+
 // ── Scroll reveal ──────────────────────────────────────────
 const reveals = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver(
