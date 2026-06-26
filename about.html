@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden bg-[#faf9f6]">
+    <!-- TOP BAR -->
+    <div
+      class="top-bar hidden lg:flex px-5 sm:px-8 lg:px-14 py-2.5 bg-[#000] items-center justify-between"
+    >
+      <div
+        class="hidden md:flex items-center gap-5 text-[12.5px] text-white/90 tracking-wide"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/location.png" alt="" />
+          <span>Jaipur, Rajasthan, India</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/60"></span>
+        <a
+          href="tel:+919876543210"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/telephone.png" alt="" />
+          <span>+91 97118 79364</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/40"></span>
+        <a
+          href="mailto:hello@agency.com"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-4 opacity-60" src="./images/mail.png" alt="" />
+          <span>hello@agency.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-2 ml-auto md:ml-0">
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3.5 opacity-80"
+            src="./images/linkedin.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/instagram.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Twitter/X"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/twitter.png"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/facebook.png"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header
+      class="header-wrap px-5 sm:px-8 lg:px-14 w-full py-2 lg:py-1 flex items-center justify-between relative"
+    >
+      <div class="logo-wrap">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt=""
+            class="lg:h-18 h-15 select-none"
+          />
+        </a>
+      </div>
+      <div class="flex lg:gap-12 gap-6 items-center">
+        <div class="flex items-center gap-8">
+          <nav
+            class="hidden md:flex items-center gap-7 lg:gap-10 text-[14px] tracking-wide text-black/80"
+          >
+            <a href="./index.html" class="nav-link cursor-pointer">Home</a>
+            <a href="./services.html" class="nav-link cursor-pointer"
+              >Services</a
+            >
+            <a href="#" class="nav-link cursor-pointer">Portfolio</a>
+            <a href="#" class="nav-link cursor-pointer">About</a>
+            <a href="#" class="nav-link cursor-pointer">Blog</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            class="contact-btn hidden sm:inline-flex border border-[#e0ddd0] rounded-full px-5 py-2.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer tracking-wide"
+          >
+            Contact us
+          </button>
+          <button
+            class="cart-btn hidden sm:flex items-center gap-2.5 border border-[#e0ddd0] rounded-full lg:pl-3 pl-1.5 sm:pl-4 pr-1.5 py-1.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer"
+          >
+            <span class="inline">Get a quote</span>
+            <span
+              class="cart-icon w-7 h-7 rounded-full bg-[#000] text-white flex items-center justify-center text-[13px]"
+            >
+              <img class="w-3.5" src="./images/chat.png" alt="" />
+            </span>
+          </button>
+        </div>
+        <button id="menuBtn" class="hamburger md:hidden" aria-label="Open menu">
+          <img class="w-6" src="./images/menu.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="mobileOverlay"
+      class="fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none md:hidden"
+    ></div>
+    <aside
+      id="mobileSidebar"
+      class="fixed top-0 left-0 h-full w-[78%] max-w-[300px] bg-white z-50 md:hidden flex flex-col"
+      style="
+        transform: translateX(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+      "
+    >
+      <div
+        class="flex items-center justify-between px-6 py-5 border-b border-[#eee]"
+      >
+        <img src="./images/logo.png" alt="" class="h-14 w-auto" />
+        <button
+          id="closeMenuBtn"
+          aria-label="Close menu"
+          class="w-8 h-8 flex items-center justify-center"
+        >
+          <i class="ti ti-x text-[20px] text-[#000]"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col py-3">
+        <a
+          href="./index.html"
+          class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Home</a
+        >
+        <a
+          href="./services.html"
+          class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Services</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Portfolio</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >About</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Blog</a
+        >
+      </nav>
+      <div class="mt-auto px-6 py-6 border-t border-[#eee] flex flex-col gap-3">
+        <button
+          class="contact-btn border border-[#e0ddd0] rounded-full px-5 py-3 text-[13px] font-medium text-[#2c2c2a] bg-white"
+        >
+          Contact us
+        </button>
+        <button
+          class="bg-[#000] text-white rounded-full px-5 py-3 text-[13px] font-medium flex items-center justify-center gap-2"
+        >
+          Get a Quote <i class="ti ti-arrow-right"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ====================== ABOUT US ========================= -->
+    <section class="w-full bg-[#faf9f6] px-5 sm:px-8 lg:px-14 py-6 lg:py-10">
+      <div>
+        <!-- Section Header -->
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-16 reveal"
+        >
+          <div>
+            <div
+              class="inline-flex items-center gap-2 bg-white border border-[#e0ddd0] rounded-full pl-1.5 pr-4 py-1.5 text-[12px] font-medium text-[#2c2c2a] mb-4 shadow-sm"
+            >
+              <span
+                class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-[11px]"
+              >
+                <i class="ti ti-user"></i>
+              </span>
+              About us
+            </div>
+            <h2
+              class="text-[clamp(24px,4vw,46px)] font-bold leading-[1.15] text-[#1a1a18]"
+            >
+              The person behind<br class="hidden sm:block" />
+              <span class="relative inline-block">
+                the agency
+                <span
+                  class="absolute left-0 bottom-1 w-full h-[3px] bg-black opacity-[0.12] rounded-full"
+                ></span>
+              </span>
+            </h2>
+          </div>
+          <p
+            class="lg:text-[14px] text-[12px] font-light text-[#5a5a58] leading-[1.8] max-w-xs md:text-right"
+          >
+            Built from passion, driven by results — here's the story behind our
+            agency.
+          </p>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+          <!-- Left: CEO Image card -->
+          <div
+            class="reveal lg:col-span-2 flex flex-col gap-4"
+            style="transition-delay: 0.05s"
+          >
+            <!-- Image -->
+            <div
+              class="relative bg-[#e8e4db] rounded-2xl overflow-hidden"
+              style="aspect-ratio: 4/5"
+            >
+              <img
+                src="YOUR_CEO_IMAGE_HERE.jpg"
+                alt="CEO"
+                class="w-full h-full object-cover object-top"
+              />
+              <!-- Placeholder jab tak image nahi -->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none"
+              >
+                <i class="ti ti-user text-[48px] text-[#c5c1b6]"></i>
+                <span class="text-[12px] text-[#b5b2a8] font-medium"
+                  >Add CEO image</span
+                >
+              </div>
+              <!-- Name tag bottom -->
+              <div
+                class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm border border-[#e8e5da] rounded-xl px-4 py-3 flex items-center justify-between"
+              >
+                <div>
+                  <p class="text-[14px] font-semibold text-[#1a1a18]">
+                    Founder Name
+                  </p>
+                  <p class="text-[11.5px] text-[#8a8a88]">Founder & CEO</p>
+                </div>
+                <div class="flex gap-2">
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full border border-[#e0ddd0] flex items-center justify-center text-[#5a5a58] hover:bg-black hover:text-white hover:border-black transition-all"
+                  >
+                    <i class="ti ti-brand-linkedin text-[13px]"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full border border-[#e0ddd0] flex items-center justify-center text-[#5a5a58] hover:bg-black hover:text-white hover:border-black transition-all"
+                  >
+                    <i class="ti ti-brand-instagram text-[13px]"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience badge strip -->
+            <div
+              class="bg-black rounded-2xl px-6 py-5 flex items-center justify-between gap-4"
+            >
+              <div class="flex flex-col gap-0.5">
+                <span class="lg:text-[24px] text-[20px] font-bold text-white"
+                  >8+</span
+                >
+                <span class="lg:text-[11px] text-[10px] text-white/60"
+                  >Years experience</span
+                >
+              </div>
+              <div class="w-px self-stretch bg-white/10"></div>
+              <div class="flex flex-col gap-0.5">
+                <span class="lg:text-[24px] text-[20px] font-bold text-white"
+                  >500+</span
+                >
+                <span class="lg:text-[11px] text-[10px] text-white/60"
+                  >Clients served</span
+                >
+              </div>
+              <div class="w-px self-stretch bg-white/10"></div>
+              <div class="flex flex-col gap-0.5">
+                <span class="lg:text-[24px] text-[20px] font-bold text-white"
+                  >745+</span
+                >
+                <span class="lg:text-[11px] text-[10px] text-white/60"
+                  >Projects done</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Story + values -->
+          <div
+            class="reveal lg:col-span-3 flex flex-col gap-4"
+            style="transition-delay: 0.1s"
+          >
+            <!-- Story card -->
+            <div
+              class="bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-8 flex flex-col gap-5"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-9 h-9 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[16px]"
+                >
+                  <i class="ti ti-book"></i>
+                </div>
+                <h3 class="text-[15px] font-semibold text-[#1a1a18]">
+                  Our Story
+                </h3>
+              </div>
+              <p class="text-[13px] text-[#5a5a58] leading-[1.9]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Started
+                with a simple vision — to help small businesses compete with big
+                brands online. What began as a one-person freelance operation
+                has grown into a full-service digital agency, serving clients
+                across India and abroad.
+              </p>
+              <p class="text-[13px] text-[#5a5a58] leading-[1.9]">
+                Every project we take on is treated like our own business. We
+                don't just deliver a website — we deliver growth. That
+                philosophy is what has kept our clients coming back and
+                referring us to their networks.
+              </p>
+              <!-- Quote -->
+              <div class="border-l-2 border-black pl-5 py-1 mt-1">
+                <p
+                  class="text-[14px] font-medium text-[#1a1a18] leading-[1.7] italic"
+                >
+                  "We don't sell services — we build partnerships that help
+                  businesses grow."
+                </p>
+                <p class="text-[12px] text-[#8a8a88] mt-1.5">
+                  — Founder Name, CEO
+                </p>
+              </div>
+            </div>
+
+            <!-- Values: 2x2 grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                class="bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[18px]"
+                >
+                  <i class="ti ti-heart-handshake"></i>
+                </div>
+                <div>
+                  <h4 class="text-[14px] font-semibold text-[#1a1a18] mb-1">
+                    Client First
+                  </h4>
+                  <p class="text-[12px] text-[#5a5a58] leading-[1.75]">
+                    Your success is our success. Every decision we make is with
+                    your business goals in mind.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[18px]"
+                >
+                  <i class="ti ti-diamond"></i>
+                </div>
+                <div>
+                  <h4 class="text-[14px] font-semibold text-[#1a1a18] mb-1">
+                    Quality Always
+                  </h4>
+                  <p class="text-[12px] text-[#5a5a58] leading-[1.75]">
+                    We never compromise on quality. Every pixel, every line of
+                    code is crafted with care.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[18px]"
+                >
+                  <i class="ti ti-eye"></i>
+                </div>
+                <div>
+                  <h4 class="text-[14px] font-semibold text-[#1a1a18] mb-1">
+                    Transparency
+                  </h4>
+                  <p class="text-[12px] text-[#5a5a58] leading-[1.75]">
+                    No hidden costs, no surprises. We keep you updated at every
+                    step of the project.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[18px]"
+                >
+                  <i class="ti ti-bolt"></i>
+                </div>
+                <div>
+                  <h4 class="text-[14px] font-semibold text-[#1a1a18] mb-1">
+                    Fast Delivery
+                  </h4>
+                  <p class="text-[12px] text-[#5a5a58] leading-[1.75]">
+                    We respect your time. Projects are delivered on schedule
+                    without cutting corners.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div
+          class="reveal mt-4 sm:mt-5 flex flex-col sm:flex-row items-center justify-between gap-5 bg-white border border-[#e8e5da] rounded-2xl lg:px-7 px-5 py-5 sm:py-6"
+          style="transition-delay: 0.3s"
+        >
+          <div>
+            <p class="text-[15px] font-semibold text-[#1a1a18] mb-0.5">
+              Want to know more about us?
+            </p>
+            <p class="lg:text-[13px] text-[12px] font-light text-[#5a5a58]">
+              Let's get on a call — no obligations, just a conversation.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 lg:text-[13px] text-[10.5px] font-medium text-[#2c2c2a] border border-[#e0ddd0] rounded-full px-5 py-2.5 hover:border-black transition-all"
+            >
+              Our work
+            </a>
+            <a
+              href="https://wa.me/919711879364"
+              target="_blank"
+              class="btn-primary inline-flex items-center gap-2.5 bg-black text-white rounded-full px-5 py-2.5 lg:text-[13px] text-[10.5px] font-medium border-0 cursor-pointer"
+              style="transition: all 0.25s ease"
+            >
+              Let's talk
+              <span
+                class="arrow-icon w-[24px] h-[24px] rounded-full bg-white/15 hidden lg:flex items-center justify-center text-[12px]"
+              >
+                <img src="./images/next.png" class="w-3" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full bg-[#faf9f6] px-5 sm:px-8 lg:px-14 py-16 sm:py-20 lg:py-24"
+    >
+      <div>
+        <!-- Section Header -->
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-16 reveal"
+        >
+          <div>
+            <div
+              class="inline-flex items-center gap-2 bg-white border border-[#e0ddd0] rounded-full pl-1.5 pr-4 py-1.5 text-[12px] font-medium text-[#2c2c2a] mb-4 shadow-sm"
+            >
+              <span
+                class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-[11px]"
+              >
+                <i class="ti ti-mail"></i>
+              </span>
+              Contact us
+            </div>
+            <h2
+              class="text-[clamp(24px,4vw,46px)] font-bold leading-[1.15] text-[#1a1a18]"
+            >
+              Let's build something<br class="hidden sm:block" />
+              <span class="relative inline-block">
+                great together
+                <span
+                  class="absolute left-0 bottom-1 w-full h-[3px] bg-black opacity-[0.12] rounded-full"
+                ></span>
+              </span>
+            </h2>
+          </div>
+          <p
+            class="lg:text-[14px] text-[12px] font-light text-[#5a5a58] leading-[1.8] max-w-xs md:text-right"
+          >
+            Have a project in mind? We'd love to hear from you. Fill the form or
+            reach out directly.
+          </p>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+          <!-- Left: Contact info + quick links -->
+          <div class="lg:col-span-2 flex flex-col gap-4">
+            <!-- Info card black -->
+            <div
+              class="reveal bg-black rounded-2xl p-7 flex flex-col gap-6"
+              style="transition-delay: 0.05s"
+            >
+              <div>
+                <div
+                  class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-white text-[20px] mb-5"
+                >
+                  <i class="ti ti-map-pin"></i>
+                </div>
+                <h3 class="text-[17px] font-semibold text-white mb-1">
+                  Our Office
+                </h3>
+                <p class="text-[13px] text-white/55 leading-[1.8]">
+                  Jaipur, Rajasthan, India
+                </p>
+              </div>
+
+              <div class="border-t border-white/10 pt-5 flex flex-col gap-4">
+                <!-- Phone -->
+                <a
+                  href="tel:+919711879364"
+                  class="flex items-center gap-3 group"
+                >
+                  <div
+                    class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white text-[15px] shrink-0 group-hover:bg-white/20 transition-all"
+                  >
+                    <i class="ti ti-phone"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10.5px] text-white/70 mb-0.5">Phone</p>
+                    <p class="text-[13px] text-white font-medium">
+                      +91 97118 79364
+                    </p>
+                  </div>
+                </a>
+                <!-- Email -->
+                <a
+                  href="mailto:hello@agency.com"
+                  class="flex items-center gap-3 group"
+                >
+                  <div
+                    class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white text-[15px] shrink-0 group-hover:bg-white/20 transition-all"
+                  >
+                    <i class="ti ti-mail"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10.5px] text-white/70 mb-0.5">Email</p>
+                    <p class="text-[13px] text-white font-medium">
+                      hello@agency.com
+                    </p>
+                  </div>
+                </a>
+                <!-- WhatsApp -->
+                <a
+                  href="https://wa.me/919711879364"
+                  target="_blank"
+                  class="flex items-center gap-3 group"
+                >
+                  <div
+                    class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white text-[15px] shrink-0 group-hover:bg-white/20 transition-all"
+                  >
+                    <i class="ti ti-brand-whatsapp"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10.5px] text-white/70 mb-0.5">WhatsApp</p>
+                    <p class="text-[13px] text-white font-medium">
+                      Chat with us directly
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Working hours card -->
+            <div
+              class="reveal bg-white border border-[#e8e5da] rounded-2xl p-6 flex flex-col gap-3"
+              style="transition-delay: 0.1s"
+            >
+              <div class="flex items-center gap-2 mb-1">
+                <div
+                  class="w-8 h-8 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[15px]"
+                >
+                  <i class="ti ti-clock-hour-9"></i>
+                </div>
+                <h3 class="text-[14px] font-semibold text-[#1a1a18]">
+                  Working Hours
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center py-2.5 border-b border-[#f0ede4]"
+              >
+                <span class="text-[12.5px] text-[#5a5a58]"
+                  >Monday – Saturday</span
+                >
+                <span class="text-[12.5px] font-medium text-[#1a1a18]"
+                  >9:00 AM – 7:00 PM</span
+                >
+              </div>
+              <div class="flex justify-between items-center py-2.5">
+                <span class="text-[12.5px] text-[#5a5a58]">Sunday</span>
+                <span class="text-[12px] font-medium text-[#b5b2a8]"
+                  >Closed</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-2 mt-1 bg-[#f4f1ea] rounded-xl px-4 py-3"
+              >
+                <span class="w-2 h-2 rounded-full bg-green-500 shrink-0"></span>
+                <span class="text-[12px] text-[#5a5a58]"
+                  >We typically reply within
+                  <span class="font-medium text-[#1a1a18]">2 hours</span></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact form -->
+          <div
+            class="reveal lg:col-span-3 bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-8"
+            style="transition-delay: 0.1s"
+          >
+            <h3 class="text-[17px] font-semibold text-[#1a1a18] mb-1">
+              Send us a message
+            </h3>
+            <p class="text-[12.5px] text-[#5a5a58] mb-7">
+              We'll get back to you within 24 hours.
+            </p>
+
+            <div class="flex flex-col gap-4">
+              <!-- Name + Phone row -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[12px] font-medium text-[#2c2c2a]"
+                    >Your Name <span class="text-red-400">*</span></label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Rahul Sharma"
+                    class="w-full bg-[#faf9f6] border border-[#e8e5da] rounded-xl px-4 py-3 text-[13px] text-[#1a1a18] placeholder:text-[#c5c1b6] outline-none focus:border-black transition-colors"
+                  />
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[12px] font-medium text-[#2c2c2a]"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    placeholder="+91 98765 43210"
+                    class="w-full bg-[#faf9f6] border border-[#e8e5da] rounded-xl px-4 py-3 text-[13px] text-[#1a1a18] placeholder:text-[#c5c1b6] outline-none focus:border-black transition-colors"
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex flex-col gap-1.5">
+                <label class="text-[12px] font-medium text-[#2c2c2a]"
+                  >Email Address <span class="text-red-400">*</span></label
+                >
+                <input
+                  type="email"
+                  placeholder="rahul@example.com"
+                  class="w-full bg-[#faf9f6] border border-[#e8e5da] rounded-xl px-4 py-3 text-[13px] text-[#1a1a18] placeholder:text-[#c5c1b6] outline-none focus:border-black transition-colors"
+                />
+              </div>
+
+              <!-- Service dropdown -->
+              <div class="flex flex-col gap-1.5">
+                <label class="text-[12px] font-medium text-[#2c2c2a]"
+                  >Service Interested In</label
+                >
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none bg-[#faf9f6] border border-[#e8e5da] rounded-xl px-4 py-3 text-[13px] text-[#1a1a18] outline-none focus:border-black transition-colors cursor-pointer"
+                  >
+                    <option value="" disabled selected class="text-[#c5c1b6]">
+                      Select a service
+                    </option>
+                    <option>Website Designing</option>
+                    <option>Website Development</option>
+                    <option>E-Commerce Design</option>
+                    <option>SEO & SMO</option>
+                    <option>Digital Marketing</option>
+                    <option>Mobile App Development</option>
+                    <option>Logo Designing</option>
+                    <option>Content Writing</option>
+                    <option>Other</option>
+                  </select>
+                  <span
+                    class="absolute right-4 top-1/2 -translate-y-1/2 text-[#8a8a88] pointer-events-none"
+                  >
+                    <i class="ti ti-chevron-down text-[14px]"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="flex flex-col gap-1.5">
+                <label class="text-[12px] font-medium text-[#2c2c2a]"
+                  >Your Message <span class="text-red-400">*</span></label
+                >
+                <textarea
+                  rows="4"
+                  placeholder="Tell us about your project — what you need, your budget, timeline, etc."
+                  class="w-full bg-[#faf9f6] border border-[#e8e5da] rounded-xl px-4 py-3 text-[13px] text-[#1a1a18] placeholder:text-[#c5c1b6] outline-none focus:border-black transition-colors resize-none"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-1"
+              >
+                <p class="text-[11.5px] text-[#b5b2a8]">
+                  <i class="ti ti-lock text-[12px] mr-1"></i>
+                  Your info is safe with us. No spam, ever.
+                </p>
+                <button
+                  type="button"
+                  onclick="handleContactSubmit(this)"
+                  class="btn-primary inline-flex items-center gap-2.5 bg-black text-white rounded-full px-6 py-3 text-[13px] font-medium border-0 cursor-pointer shrink-0"
+                  style="transition: all 0.25s ease"
+                >
+                  Send message
+                  <span
+                    class="arrow-icon w-[24px] h-[24px] rounded-full bg-white/15 flex items-center justify-center text-[12px]"
+                  >
+                    <img src="./images/next.png" class="w-3" alt="" />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom: Social + quick contact strips -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 mt-4 sm:mt-5"
+        >
+          <a
+            href="https://wa.me/919711879364"
+            target="_blank"
+            class="reveal bg-white border border-[#e8e5da] rounded-2xl px-6 py-5 flex items-center gap-4 hover:border-black transition-all group"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="shrink-0 w-11 h-11 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[20px] group-hover:bg-black group-hover:text-white transition-all"
+            >
+              <i class="ti ti-brand-whatsapp"></i>
+            </div>
+            <div>
+              <h3 class="text-[14px] font-semibold text-[#1a1a18] mb-0.5">
+                WhatsApp Us
+              </h3>
+              <p class="text-[12px] text-[#5a5a58]">Quick reply guaranteed</p>
+            </div>
+            <i
+              class="ti ti-arrow-up-right text-[#c5c1b6] text-[16px] ml-auto group-hover:text-black transition-all"
+            ></i>
+          </a>
+
+          <a
+            href="mailto:hello@agency.com"
+            class="reveal bg-white border border-[#e8e5da] rounded-2xl px-6 py-5 flex items-center gap-4 hover:border-black transition-all group"
+            style="transition-delay: 0.35s"
+          >
+            <div
+              class="shrink-0 w-11 h-11 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[20px] group-hover:bg-black group-hover:text-white transition-all"
+            >
+              <i class="ti ti-mail-forward"></i>
+            </div>
+            <div>
+              <h3 class="text-[14px] font-semibold text-[#1a1a18] mb-0.5">
+                Email Us
+              </h3>
+              <p class="text-[12px] text-[#5a5a58]">hello@agency.com</p>
+            </div>
+            <i
+              class="ti ti-arrow-up-right text-[#c5c1b6] text-[16px] ml-auto group-hover:text-black transition-all"
+            ></i>
+          </a>
+
+          <a
+            href="tel:+919711879364"
+            class="reveal bg-white border border-[#e8e5da] rounded-2xl px-6 py-5 flex items-center gap-4 hover:border-black transition-all group"
+            style="transition-delay: 0.4s"
+          >
+            <div
+              class="shrink-0 w-11 h-11 rounded-xl bg-[#f4f1ea] flex items-center justify-center text-[#1a1a18] text-[20px] group-hover:bg-black group-hover:text-white transition-all"
+            >
+              <i class="ti ti-phone-call"></i>
+            </div>
+            <div>
+              <h3 class="text-[14px] font-semibold text-[#1a1a18] mb-0.5">
+                Call Us
+              </h3>
+              <p class="text-[12px] text-[#5a5a58]">+91 97118 79364</p>
+            </div>
+            <i
+              class="ti ti-arrow-up-right text-[#c5c1b6] text-[16px] ml-auto group-hover:text-black transition-all"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full bg-[#0f0f0d]">
+      <!-- ── Top strip: CTA banner ── -->
+      <div
+        class="border-b border-white/10 px-5 sm:px-8 lg:px-14 py-10 sm:py-12"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-7"
+        >
+          <div>
+            <p
+              class="lg:text-[11.5px] text-[11px] font-medium text-white/60 tracking-widest uppercase mb-2"
+            >
+              Ready to grow?
+            </p>
+            <h2
+              class="text-[clamp(22px,3.5vw,38px)] font-bold text-white leading-[1.2]"
+            >
+              Let's build something<br class="hidden sm:block" />
+              great together.
+            </h2>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full lg:w-auto"
+          >
+            <a
+              href="https://wa.me/919711879364?text=Hi%20Senti%20Nava%20Web%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project."
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2.5 bg-white text-[#0f0f0d] rounded-full px-6 py-3 text-[13px] font-medium hover:bg-white/90 transition-all w-full sm:w-auto"
+            >
+              Start a project
+              <span
+                class="w-[22px] h-[22px] rounded-full bg-black/10 flex items-center justify-center text-[12px]"
+              >
+                <i class="ti ti-arrow-right"></i>
+              </span>
+            </a>
+            <a
+              href="mailto:hello@sentinavawebsolutions.com"
+              class="inline-flex items-center justify-center gap-2 border border-white/20 text-white/70 rounded-full px-6 py-3 text-[13px] font-medium hover:border-white/50 hover:text-white transition-all w-full sm:w-auto"
+            >
+              Send an email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Main footer body ── -->
+      <div class="px-5 sm:px-8 lg:px-14 py-14 sm:py-16">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8"
+        >
+          <!-- Col 1: Brand (wider) -->
+          <div class="lg:col-span-4 flex flex-col gap-6">
+            <a href="./index.html">
+              <img
+                src="./images/logo-white.png"
+                alt="Senti Nava Web Solutions"
+                class="h-14 w-auto"
+              />
+            </a>
+            <p class="text-[13.5px] text-white/60 leading-[1.85] max-w-xs">
+              We design and develop high-performance websites, mobile apps, and
+              digital experiences that help businesses grow — from Jaipur to the
+              world.
+            </p>
+
+            <!-- Social icons -->
+            <div class="flex items-center gap-2.5">
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="social-btn w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 text-[15px]"
+              >
+                <i class="ti ti-brand-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="social-btn w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 text-[15px]"
+              >
+                <i class="ti ti-brand-instagram"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="social-btn w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 text-[15px]"
+              >
+                <i class="ti ti-brand-x"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="social-btn w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 text-[15px]"
+              >
+                <i class="ti ti-brand-facebook"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="WhatsApp"
+                class="social-btn w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 text-[15px]"
+              >
+                <i class="ti ti-brand-whatsapp"></i>
+              </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span
+                class="inline-flex items-center gap-1.5 text-[11px] text-white/70 border border-white/10 rounded-full px-3 py-1.5"
+              >
+                <i class="ti ti-shield-check text-[12px]"></i>
+                ISO Certified
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-[11px] text-white/70 border border-white/10 rounded-full px-3 py-1.5"
+              >
+                <i class="ti ti-star-filled text-[12px]"></i>
+                4.9 / 5 Rating
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-[11px] text-white/70 border border-white/10 rounded-full px-3 py-1.5"
+              >
+                <i class="ti ti-clock text-[12px]"></i> 8+ Years
+              </span>
+            </div>
+          </div>
+
+          <!-- Col 2: Services -->
+          <div class="lg:col-span-2 flex flex-col gap-5">
+            <h4
+              class="text-[12px] font-semibold text-white/30 tracking-widest uppercase"
+            >
+              Services
+            </h4>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a
+                  href="./website-design-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Website Designing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./web-development-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Website Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ecommerce-design-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >E-Commerce Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./seo-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >SEO</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="./ppc-ad-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >PPC Advertising</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./digital-marketing-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./app-development-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Mobile App Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./logo-design-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Logo Designing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./content-writing-service.html"
+                  class="footer-link text-[13.5px] text-white/60"
+                  >Content Writing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company -->
+          <div class="lg:col-span-2 flex flex-col gap-5">
+            <h4
+              class="text-[12px] font-semibold text-white/30 tracking-widest uppercase"
+            >
+              Company
+            </h4>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >Our Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link text-[13.5px] text-white/60"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+
+            <!-- Stats mini -->
+            <div class="mt-2 flex flex-col gap-3 border-t border-white/10 pt-5">
+              <div class="flex items-center justify-between">
+                <span class="text-[12px] text-white/35">Projects done</span>
+                <span class="text-[13px] font-semibold text-white">745+</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[12px] text-white/35">Happy clients</span>
+                <span class="text-[13px] font-semibold text-white">500+</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[12px] text-white/35">Satisfaction</span>
+                <span class="text-[13px] font-semibold text-white">100%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 4: Contact -->
+          <div class="lg:col-span-4 flex flex-col gap-5">
+            <h4
+              class="text-[12px] font-semibold text-white/30 tracking-widest uppercase"
+            >
+              Get in touch
+            </h4>
+
+            <div class="flex flex-col gap-3">
+              <a
+                href="tel:+919711879364"
+                class="contact-chip flex items-start gap-3.5 rounded-xl border border-white/10 px-4 py-3.5 group"
+              >
+                <span
+                  class="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center text-white/60 text-[15px] shrink-0 group-hover:bg-white/15 transition-all"
+                >
+                  <i class="ti ti-phone"></i>
+                </span>
+                <div>
+                  <p class="text-[11px] text-white/35 mb-0.5">Phone</p>
+                  <p class="text-[13.5px] text-white/75 font-medium">
+                    +91 70424 70564
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="mailto:hello@sentinavawebsolutions.com"
+                class="contact-chip flex items-start gap-3.5 rounded-xl border border-white/10 px-4 py-3.5 group"
+              >
+                <span
+                  class="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center text-white/60 text-[15px] shrink-0 group-hover:bg-white/15 transition-all"
+                >
+                  <i class="ti ti-mail"></i>
+                </span>
+                <div>
+                  <p class="text-[11px] text-white/35 mb-0.5">Email</p>
+                  <p class="text-[13.5px] text-white/75 font-medium">
+                    hello@sentinavawebsolutions.com
+                  </p>
+                </div>
+              </a>
+
+              <div
+                class="contact-chip flex items-start gap-3.5 rounded-xl border border-white/10 px-4 py-3.5"
+              >
+                <span
+                  class="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center text-white/60 text-[15px] shrink-0"
+                >
+                  <i class="ti ti-map-pin"></i>
+                </span>
+                <div>
+                  <p class="text-[11px] text-white/35 mb-0.5">Location</p>
+                  <p class="text-[13.5px] text-white/75 font-medium">
+                    Jaipur, Rajasthan, India
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="contact-chip flex items-start gap-3.5 rounded-xl border border-white/10 px-4 py-3.5"
+              >
+                <span
+                  class="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center text-white/60 text-[15px] shrink-0"
+                >
+                  <i class="ti ti-clock"></i>
+                </span>
+                <div>
+                  <p class="text-[11px] text-white/35 mb-0.5">Working Hours</p>
+                  <p class="text-[13.5px] text-white/75 font-medium">
+                    Mon – Sat, 10:00 AM – 7:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Services tag cloud ── -->
+      <div class="border-t border-white/8 px-5 sm:px-8 lg:px-14 py-7">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-2">
+          <span class="text-[11px] text-white/25 mr-2 tracking-wide uppercase"
+            >We specialise in</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Web Design</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Web Development</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >E-Commerce</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >SEO & SMO</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Digital Marketing</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Mobile Apps</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Logo Design</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Content Writing</span
+          >
+          <span
+            class="service-tag text-[11.5px] text-white/50 border border-white/10 rounded-full px-3.5 py-1.5 cursor-default"
+            >Branding</span
+          >
+        </div>
+      </div>
+
+      <!-- ── Bottom bar ── -->
+      <div class="border-t border-white/8 px-5 sm:px-8 lg:px-14 py-5">
+        <div
+          class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3"
+        >
+          <p class="text-[12px] text-white/30 text-center sm:text-left">
+            © 2025 Senti Nava Web Solutions. All rights reserved.
+          </p>
+          <div class="flex items-center gap-5">
+            <a
+              href="#"
+              class="text-[12px] text-white/30 hover:text-white/60 transition-colors"
+              >Privacy Policy</a
+            >
+            <span class="w-px h-3 bg-white/15"></span>
+            <a
+              href="#"
+              class="text-[12px] text-white/30 hover:text-white/60 transition-colors"
+              >Terms of Service</a
+            >
+            <span class="w-px h-3 bg-white/15"></span>
+            <a
+              href="#"
+              class="text-[12px] text-white/30 hover:text-white/60 transition-colors"
+              >Sitemap</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/919711879364?text=Hi%20Senti%20Nava%20Web%20Solutions%2C%20I%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20web%20services.%20Could%20you%20please%20share%20more%20details%3F"
+      target="_blank"
+      rel="noopener noreferrer"
+      id="whatsappBtn"
+      class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-[60] w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.45)]"
+      aria-label="Chat on WhatsApp"
+    >
+      <span
+        class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-40"
+      ></span>
+      <img class="md:w-7 w-5" src="./images/whatsapp.png" alt="" />
+    </a>
+
+    <script src="./js/common.js"></script>
+  </body>
+</html>

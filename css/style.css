@@ -477,3 +477,44 @@ html {
   background-color: white;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
+
+.pf-filter {
+  background: #fff;
+  border-color: #e0ddd0;
+  color: #5a5a58;
+}
+.pf-filter:hover {
+  border-color: #000;
+  color: #1a1a18;
+}
+.pf-filter.active {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.pf-item {
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+.pf-item.pf-hidden {
+  display: none;
+}
+.pf-tag {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pf-tag:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+.portfolio-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.09);
+}
