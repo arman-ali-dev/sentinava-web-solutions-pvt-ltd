@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- TOP BAR -->
+    <div
+      class="top-bar hidden lg:flex px-5 sm:px-8 lg:px-14 py-2.5 bg-[#000] items-center justify-between"
+    >
+      <div
+        class="hidden md:flex items-center gap-5 text-[12.5px] text-white/90 tracking-wide"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/location.png" alt="" />
+          <span>Jaipur, Rajasthan, India</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/60"></span>
+        <a
+          href="tel:+919876543210"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/telephone.png" alt="" />
+          <span>+91 98765 43210</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/40"></span>
+        <a
+          href="mailto:hello@agency.com"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-60" src="./images/mail.png" alt="" />
+          <span>hello@agency.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-2 ml-auto md:ml-0">
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3.5 opacity-80"
+            src="./images/linkedin.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/instagram.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Twitter/X"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/twitter.png"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/facebook.png"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header
+      class="header-wrap px-5 sm:px-8 lg:px-14 w-full bg-white py-4 lg:py-1 flex items-center justify-between relative"
+    >
+      <div class="logo-wrap">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt=""
+            class="lg:h-18 h-15 select-none"
+          />
+        </a>
+      </div>
+      <div class="flex lg:gap-12 gap-6 items-center">
+        <div class="flex items-center gap-8">
+          <nav
+            class="hidden md:flex items-center gap-7 lg:gap-10 text-[14px] tracking-wide text-black/80"
+          >
+            <a href="#" class="nav-link cursor-pointer">Home</a>
+            <a href="#" class="nav-link cursor-pointer">Services</a>
+            <a href="#" class="nav-link cursor-pointer">Portfolio</a>
+            <a href="#" class="nav-link cursor-pointer">About</a>
+            <a href="#" class="nav-link cursor-pointer">Blog</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            class="contact-btn hidden sm:inline-flex border border-[#e0ddd0] rounded-full px-5 py-2.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer tracking-wide"
+          >
+            Contact us
+          </button>
+          <button
+            class="cart-btn hidden sm:flex items-center gap-2.5 border border-[#e0ddd0] rounded-full lg:pl-3 pl-1.5 sm:pl-4 pr-1.5 py-1.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer"
+          >
+            <span class="inline">Get a quote</span>
+            <span
+              class="cart-icon w-7 h-7 rounded-full bg-[#000] text-white flex items-center justify-center text-[13px]"
+            >
+              <img class="w-3.5" src="./images/chat.png" alt="" />
+            </span>
+          </button>
+        </div>
+        <button id="menuBtn" class="hamburger md:hidden" aria-label="Open menu">
+          <img class="w-6" src="./images/menu.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE OVERLAY + SIDEBAR -->
+    <div
+      id="mobileOverlay"
+      class="fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none md:hidden"
+    ></div>
+    <aside
+      id="mobileSidebar"
+      class="fixed top-0 left-0 h-full w-[78%] max-w-[300px] bg-white z-50 md:hidden flex flex-col"
+      style="
+        transform: translateX(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+      "
+    >
+      <div
+        class="flex items-center justify-between px-6 py-5 border-b border-[#eee]"
+      >
+        <img src="./images/logo.png" alt="" class="h-14 w-auto" />
+        <button
+          id="closeMenuBtn"
+          aria-label="Close menu"
+          class="w-8 h-8 flex items-center justify-center"
+        >
+          <i class="ti ti-x text-[20px] text-[#000]"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col py-3">
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >About</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Plans</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Locations</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Support</a
+        >
+      </nav>
+      <div class="mt-auto px-6 py-6 border-t border-[#eee] flex flex-col gap-3">
+        <button
+          class="contact-btn border border-[#e0ddd0] rounded-full px-5 py-3 text-[13px] font-medium text-[#2c2c2a] bg-white"
+        >
+          Contact us
+        </button>
+        <button
+          class="bg-[#000] text-white rounded-full px-5 py-3 text-[13px] font-medium flex items-center justify-center gap-2"
+        >
+          Get a Quote <i class="ti ti-arrow-right"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ====================== HERO SECTION ========================= -->
+    <section
+      class="w-full bg-[#faf9f6] px-5 sm:px-8 lg:px-14 pt-2 sm:pt-16 pb-12 sm:pb-20 relative overflow-hidden"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8 items-center">
+        <!-- LEFT COLUMN -->
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <!-- Badge -->
+          <div
+            class="animate-fade-up inline-flex items-center gap-2 bg-white border border-[#e0ddd0] rounded-full pl-1.5 pr-4 py-1.5 text-[12px] font-medium text-[#2c2c2a] mb-5 shadow-sm"
+          >
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-[11px]"
+            >
+              <i class="ti ti-sparkles"></i>
+            </span>
+            Award-winning digital agency
+          </div>
+
+          <!-- Headline -->
+          <h1
+            class="animate-fade-up delay-100 font-bold leading-[1.12] text-[#1a1a18] mb-4"
+            style="font-size: clamp(28px, 5vw, 54px)"
+          >
+            We craft brands that
+            <span class="underline-word relative inline-block">stand out</span>
+            &amp; convert.
+          </h1>
+
+          <!-- Subtext -->
+          <p
+            class="animate-fade-up delay-200 lg:text-[12.5px] text-[14.5px] font-light text-[#5a5a58] leading-[1.8] mb-7 max-w-sm mx-auto md:mx-0"
+          >
+            From strategy to execution — we help businesses grow with
+            intentional design, powerful messaging, and results-driven digital
+            experiences.
+          </p>
+
+          <!-- CTA Row -->
+          <div
+            class="animate-fade-up delay-300 flex flex-wrap items-center justify-center md:justify-start gap-2.5 mb-9"
+          >
+            <button
+              class="btn-primary inline-flex items-center gap-2.5 bg-black text-white rounded-full px-[22px] py-3 text-[13px] font-medium cursor-pointer border-0"
+            >
+              Get a quote
+              <span
+                class="arrow-icon w-[26px] h-[26px] rounded-full bg-white/15 flex items-center justify-center text-[13px]"
+              >
+                <img class="w-3" src="./images/next.png" alt="" />
+              </span>
+            </button>
+            <button
+              class="btn-secondary inline-flex items-center gap-2 bg-white text-[#2c2c2a] border border-[#e0ddd0] rounded-full px-[22px] py-3 text-[13px] font-medium cursor-pointer"
+            >
+              <i class="ti ti-player-play text-[14px]"></i>
+              Watch our work
+            </button>
+          </div>
+
+          <!-- Stats -->
+          <div
+            class="animate-fade-up delay-400 flex items-center justify-center md:justify-start gap-5 sm:gap-6"
+          >
+            <div class="flex flex-col gap-0.5">
+              <span class="text-[22px] font-bold text-[#1a1a18]">120+</span>
+              <span class="text-[11px] text-[#8a8a88] tracking-wide"
+                >Projects delivered</span
+              >
+            </div>
+            <div class="w-px self-stretch bg-[#e0ddd0]"></div>
+            <div class="flex flex-col gap-0.5">
+              <span class="text-[22px] font-bold text-[#1a1a18]">98%</span>
+              <span class="text-[11px] text-[#8a8a88] tracking-wide"
+                >Client satisfaction</span
+              >
+            </div>
+            <div class="w-px self-stretch bg-[#e0ddd0]"></div>
+            <div class="flex flex-col gap-0.5">
+              <span class="text-[22px] font-bold text-[#1a1a18]">8yr</span>
+              <span class="text-[11px] text-[#8a8a88] tracking-wide"
+                >Industry experience</span
+              >
+            </div>
+          </div>
+
+          <!-- Scroll hint — desktop only -->
+          <div
+            class="animate-fade-up delay-500 hidden md:flex items-center gap-3 text-[11px] text-[#aaa] mt-7"
+          >
+            <span class="w-7 h-px bg-[#ccc]"></span>
+            Scroll to explore
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div
+          class="order-1 md:order-2 animate-fade-up delay-200 relative flex justify-center items-end px-10 sm:px-16 md:px-6 lg:px-8"
+        >
+          <!-- Blob bottom-right -->
+          <div
+            class="absolute -bottom-5 -right-2 sm:-right-5 w-[60px] sm:w-[70px] h-[60px] sm:h-[70px] bg-[#e6e1d5] rounded-full z-0 pointer-events-none"
+          ></div>
+
+          <!-- Image Card -->
+          <div
+            class="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px] bg-[#e8e4db] rounded-3xl overflow-visible z-10"
+            style="aspect-ratio: 3.5/4"
+          >
+            <div class="w-full h-full rounded-3xl overflow-hidden">
+              <img
+                class="w-full absolute bottom-0"
+                src="./images/ff.png"
+                alt="Team member"
+              />
+            </div>
+          </div>
+
+          <!-- Review card: bottom-right -->
+          <div
+            class="animate-fade-up delay-500 absolute -bottom-5 -right-2 sm:-right-4 bg-white border border-[#e8e5da] rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 flex items-center gap-2.5 sm:gap-3 min-w-[180px] sm:min-w-[210px] shadow-md z-20"
+          >
+            <div
+              class="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-black text-white flex items-center justify-center text-[14px] sm:text-[15px] shrink-0"
+            >
+              <i class="ti ti-user"></i>
+            </div>
+            <div>
+              <div
+                class="text-[11.5px] sm:text-[12px] font-semibold text-[#1a1a18]"
+              >
+                Neeraj Sharma — CEO
+              </div>
+              <div
+                class="flex gap-0.5 text-[#e89a2a] text-[10px] sm:text-[11px] my-0.5"
+              >
+                <i class="ti ti-star-filled"></i>
+                <i class="ti ti-star-filled"></i>
+                <i class="ti ti-star-filled"></i>
+                <i class="ti ti-star-filled"></i>
+                <i class="ti ti-star-filled"></i>
+              </div>
+              <div class="text-[10.5px] sm:text-[11px] text-[#8a8a88]">
+                "Best agency we've worked with."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full bg-[#faf9f6] px-5 sm:px-8 lg:px-14 py-8 sm:py-20 lg:py-24"
+    >
+      <div class="">
+        <!-- Section header -->
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-16 reveal"
+        >
+          <div>
+            <!-- Eyebrow -->
+            <div
+              class="inline-flex items-center gap-2 bg-white border border-[#e0ddd0] rounded-full pl-1.5 pr-4 py-1.5 text-[12px] font-medium text-[#2c2c2a] mb-4 shadow-sm"
+            >
+              <span
+                class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-[11px]"
+              >
+                <i class="ti ti-layout-grid"></i>
+              </span>
+              What we offer
+            </div>
+            <h2
+              class="text-[clamp(28px,4vw,46px)] font-bold leading-[1.15] text-[#1a1a18]"
+            >
+              Services built to<br class="hidden sm:block" />
+              <span class="relative inline-block">
+                grow your business
+                <span
+                  class="absolute left-0 bottom-1 w-full h-[3px] bg-black opacity-[0.12] rounded-full"
+                ></span>
+              </span>
+            </h2>
+          </div>
+          <p
+            class="text-[14px] font-light text-[#5a5a58] leading-[1.8] max-w-xs md:text-right"
+          >
+            From design to digital marketing — every service crafted with
+            intention and delivered with precision.
+          </p>
+        </div>
+
+        <!-- Cards grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5"
+        >
+          <!-- 1. Website Designing — FEATURED (black) -->
+          <div
+            class="service-card service-card-featured reveal rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer lg:row-span-1"
+            style="transition-delay: 0.05s"
+          >
+            <div class="flex items-start justify-between">
+              <div
+                class="card-icon-wrap w-11 h-11 rounded-xl flex items-center justify-center text-[20px]"
+              >
+                <i class="ti ti-layout-2"></i>
+              </div>
+              <span
+                class="card-tag text-[10.5px] font-medium px-2.5 py-1 rounded-full"
+                >Popular</span
+              >
+            </div>
+            <div class="flex-1">
+              <h3 class="card-title text-[15.5px] font-semibold mb-2">
+                Website Designing
+              </h3>
+              <p class="card-desc text-[12.5px] leading-[1.75]">
+                Beautiful, precision-crafted websites tailored to your brand.
+                Innovative designs that engage and convert.
+              </p>
+            </div>
+            <div class="flex items-center justify-between">
+              <a
+                href="#"
+                class="text-[12px] font-medium text-white/80 hover:text-white transition-colors flex items-center gap-1.5"
+              >
+                Learn more
+                <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Website Development -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.1s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-code"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                Website Development
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Highly customised web development from qualified experts —
+                ensuring maximum customer interaction.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 3. E-Commerce -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.15s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-shopping-cart"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                E-Commerce Design
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Engaging e-commerce experiences that attract customers and drive
+                sales — built to convert.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 4. SEO & SMO -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.2s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-chart-arrows-vertical"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                SEO & SMO
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Boost your visibility on search engines and social media. We
+                take every step to promote your business.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 5. Digital Marketing -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.25s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-speakerphone"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                Digital Marketing
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Strategic brand promotion across digital channels. We grow your
+                audience and maximise reach.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 6. Mobile Apps -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-device-mobile"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                Mobile App Development
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Custom Android & iOS apps built with the latest tech — serving
+                your customers better, everywhere.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 7. Logo Designing -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.35s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-pentagon"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                Logo Designing
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Professional, attractive logos that build your brand identity
+                and leave a lasting impression.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+
+          <!-- 8. Content Writing -->
+          <div
+            class="service-card reveal bg-white border border-[#e8e5da] rounded-2xl p-6 sm:p-7 flex flex-col gap-4 cursor-pointer"
+            style="transition-delay: 0.4s"
+          >
+            <div
+              class="card-icon-wrap w-11 h-11 rounded-xl bg-[#f4f1ea] text-[#1a1a18] flex items-center justify-center text-[20px]"
+            >
+              <i class="ti ti-pencil"></i>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="card-title text-[15.5px] font-semibold text-[#1a1a18] mb-2"
+              >
+                Content Writing
+              </h3>
+              <p class="card-desc text-[12.5px] text-[#5a5a58] leading-[1.75]">
+                Well-crafted, reader-relevant content that fuels SEO, boosts
+                engagement, and increases sales.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-[12px] font-medium text-[#1a1a18] flex items-center gap-1.5 hover:gap-2.5 transition-all"
+            >
+              Learn more
+              <i class="ti ti-arrow-right card-arrow text-[13px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom CTA strip -->
+        <div
+          class="reveal mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-between gap-5 bg-white border border-[#e8e5da] rounded-2xl px-7 py-5 sm:py-6"
+          style="transition-delay: 0.45s"
+        >
+          <div>
+            <p class="text-[15px] font-semibold text-[#1a1a18] mb-0.5">
+              Not sure which service fits you?
+            </p>
+            <p class="text-[13px] font-light text-[#5a5a58]">
+              Let's talk — we'll help you find the right solution.
+            </p>
+          </div>
+          <div class="lg:flex items-center gap-3 shrink-0">
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 text-[13px] font-medium text-[#2c2c2a] border border-[#e0ddd0] rounded-full px-5 py-2.5 hover:border-black transition-all"
+            >
+              View all services
+            </a>
+            <a
+              href="#"
+              class="btn-primary inline-flex items-center gap-2.5 bg-black text-white rounded-full px-5 py-2.5 text-[13px] font-medium border-0 cursor-pointer"
+              style="transition: all 0.25s ease"
+            >
+              Get a free quote
+              <span
+                class="arrow-icon w-[24px] h-[24px] rounded-full bg-white/15 flex items-center justify-center text-[12px]"
+                style="transition: transform 0.4s ease"
+              >
+                <i class="ti ti-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

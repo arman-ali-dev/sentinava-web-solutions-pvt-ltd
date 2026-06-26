@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-wrap {
+  animation: slideDown 0.7s ease both;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0%;
+  height: 1.5px;
+  background: #000;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+.nav-link:hover {
+  color: #000;
+}
+.nav-link:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+.icon-btn {
+  transition: all 0.25s ease;
+}
+.icon-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.contact-btn {
+  transition: all 0.25s ease;
+}
+.contact-btn:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 6px 16px rgba(15, 110, 86, 0.22);
+  transform: translateY(-2px);
+}
+.contact-btn:active {
+  transform: scale(0.96);
+}
+
+.cart-btn {
+  transition: all 0.25s ease;
+}
+.cart-btn:hover {
+  border-color: #000;
+  box-shadow: 0 8px 20px rgba(15, 110, 86, 0.18);
+  transform: translateY(-2px);
+}
+.cart-btn:active {
+  transform: scale(0.96);
+}
+.cart-icon {
+  transition: transform 0.4s ease;
+}
+.cart-btn:hover .cart-icon {
+  transform: rotate(18deg);
+}
+
+.logo-wrap {
+  transition: transform 0.4s ease;
+}
+.logo-wrap:hover {
+  transform: scale(1.05);
+}
+
+.search-circle {
+  transition: all 0.3s ease;
+}
+.search-circle:hover {
+  transform: rotate(90deg);
+  background: #000;
+  color: #fff;
+}
+
+/* Hero Section ---------------------------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fadeUp 0.8s ease both;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.btn-primary {
+  transition: all 0.25s ease;
+}
+.btn-primary:hover {
+  background: #1a1a18;
+  transform: translateY(-2px);
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+.arrow-icon {
+  transition: transform 0.4s ease;
+}
+.btn-primary:hover .arrow-icon {
+  transform: rotate(18deg);
+}
+
+.btn-secondary {
+  transition: all 0.25s ease;
+}
+.btn-secondary:hover {
+  border-color: #000;
+  transform: translateY(-2px);
+}
+.btn-secondary:active {
+  transform: scale(0.97);
+}
+
+.underline-word::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  opacity: 0.18;
+  border-radius: 9999px;
+}
+
+/* Services Section */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fadeUp 0.7s ease both;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+.delay-700 {
+  animation-delay: 0.7s;
+}
+.delay-800 {
+  animation-delay: 0.8s;
+}
+
+/* Card hover */
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.09);
+}
+.service-card:hover .card-icon-wrap {
+  background: #000;
+  color: #fff;
+}
+.card-icon-wrap {
+  transition: all 0.3s ease;
+}
+
+/* Arrow on hover */
+.card-arrow {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+}
+.service-card:hover .card-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Featured card */
+.service-card-featured {
+  background: #000;
+  color: #fff;
+}
+.service-card-featured .card-icon-wrap {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+.service-card-featured:hover .card-icon-wrap {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+.service-card-featured .card-title {
+  color: #fff;
+}
+.service-card-featured .card-desc {
+  color: rgba(255, 255, 255, 0.65);
+}
+.service-card-featured .card-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+.service-card-featured .card-arrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+.service-card-featured:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
+}
+
+/* Scroll-triggered reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
