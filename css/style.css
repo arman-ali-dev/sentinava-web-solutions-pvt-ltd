@@ -465,3 +465,15 @@ html {
 .step-icon-wrap {
   transition: all 0.3s ease;
 }
+
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  transition: box-shadow 0.3s ease;
+}
+
+.header-wrap.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}

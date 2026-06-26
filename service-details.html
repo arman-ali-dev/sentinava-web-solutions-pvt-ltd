@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden bg-[#faf9f6]">
+    <!-- TOP BAR -->
+    <div
+      class="top-bar hidden lg:flex px-5 sm:px-8 lg:px-14 py-2.5 bg-[#000] items-center justify-between"
+    >
+      <div
+        class="hidden md:flex items-center gap-5 text-[12.5px] text-white/90 tracking-wide"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/location.png" alt="" />
+          <span>Jaipur, Rajasthan, India</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/60"></span>
+        <a
+          href="tel:+919876543210"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-80" src="./images/telephone.png" alt="" />
+          <span>+91 97118 79364</span>
+        </a>
+        <span class="w-px h-3.5 bg-white/40"></span>
+        <a
+          href="mailto:hello@agency.com"
+          class="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+        >
+          <img class="w-3.5 opacity-60" src="./images/mail.png" alt="" />
+          <span>hello@agency.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-2 ml-auto md:ml-0">
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3.5 opacity-80"
+            src="./images/linkedin.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/instagram.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Twitter/X"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/twitter.png"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="w-7 h-7 rounded-full border border-white/75 flex items-center justify-center text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <img
+            class="w-3 opacity-80"
+            src="./images/facebook.png"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header
+      class="header-wrap px-5 sm:px-8 lg:px-14 w-full py-4 lg:py-1 flex items-center justify-between relative"
+    >
+      <div class="logo-wrap">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt=""
+            class="lg:h-18 h-15 select-none"
+          />
+        </a>
+      </div>
+      <div class="flex lg:gap-12 gap-6 items-center">
+        <div class="flex items-center gap-8">
+          <nav
+            class="hidden md:flex items-center gap-7 lg:gap-10 text-[14px] tracking-wide text-black/80"
+          >
+            <a href="./index.html" class="nav-link cursor-pointer">Home</a>
+            <a href="./services.html" class="nav-link cursor-pointer"
+              >Services</a
+            >
+            <a href="#" class="nav-link cursor-pointer">Portfolio</a>
+            <a href="#" class="nav-link cursor-pointer">About</a>
+            <a href="#" class="nav-link cursor-pointer">Blog</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            class="contact-btn hidden sm:inline-flex border border-[#e0ddd0] rounded-full px-5 py-2.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer tracking-wide"
+          >
+            Contact us
+          </button>
+          <button
+            class="cart-btn hidden sm:flex items-center gap-2.5 border border-[#e0ddd0] rounded-full lg:pl-3 pl-1.5 sm:pl-4 pr-1.5 py-1.5 text-[13px] font-medium text-[#2c2c2a] bg-white cursor-pointer"
+          >
+            <span class="inline">Get a quote</span>
+            <span
+              class="cart-icon w-7 h-7 rounded-full bg-[#000] text-white flex items-center justify-center text-[13px]"
+            >
+              <img class="w-3.5" src="./images/chat.png" alt="" />
+            </span>
+          </button>
+        </div>
+        <button id="menuBtn" class="hamburger md:hidden" aria-label="Open menu">
+          <img class="w-6" src="./images/menu.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="mobileOverlay"
+      class="fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none md:hidden"
+    ></div>
+    <aside
+      id="mobileSidebar"
+      class="fixed top-0 left-0 h-full w-[78%] max-w-[300px] bg-white z-50 md:hidden flex flex-col"
+      style="
+        transform: translateX(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+      "
+    >
+      <div
+        class="flex items-center justify-between px-6 py-5 border-b border-[#eee]"
+      >
+        <img src="./images/logo.png" alt="" class="h-14 w-auto" />
+        <button
+          id="closeMenuBtn"
+          aria-label="Close menu"
+          class="w-8 h-8 flex items-center justify-center"
+        >
+          <i class="ti ti-x text-[20px] text-[#000]"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col py-3">
+        <a
+          href="./index.html"
+          class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Home</a
+        >
+        <a
+          href="./services.html"
+          class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Services</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Portfolio</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >About</a
+        >
+        <a href="#" class="sidebar-link px-6 py-3.5 text-[15px] text-[#2c2c2a]"
+          >Blog</a
+        >
+      </nav>
+      <div class="mt-auto px-6 py-6 border-t border-[#eee] flex flex-col gap-3">
+        <button
+          class="contact-btn border border-[#e0ddd0] rounded-full px-5 py-3 text-[13px] font-medium text-[#2c2c2a] bg-white"
+        >
+          Contact us
+        </button>
+        <button
+          class="bg-[#000] text-white rounded-full px-5 py-3 text-[13px] font-medium flex items-center justify-center gap-2"
+        >
+          Get a Quote <i class="ti ti-arrow-right"></i>
+        </button>
+      </div>
+    </aside>
+
+    <section class="w-full bg-[#0f0f0d] relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-[0.04]"
+        style="
+          background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+          background-size: 28px 28px;
+        "
+      ></div>
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[180px] bg-white/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+
+      <div class="relative z-10 px-5 sm:px-8 lg:px-14 py-14 sm:py-18 lg:py-20">
+        <div
+          class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8"
+        >
+          <div class="flex-1">
+            <!-- Breadcrumb -->
+            <div
+              class="animate-fade-up flex items-center gap-2 text-[12px] text-white/35 mb-5"
+            >
+              <a
+                href="./index.html"
+                class="hover:text-white/60 transition-colors"
+                >Home</a
+              >
+              <i class="ti ti-chevron-right text-[10px]"></i>
+              <a
+                href="./services.html"
+                class="hover:text-white/60 transition-colors"
+                >Services</a
+              >
+              <i class="ti ti-chevron-right text-[10px]"></i>
+              <!-- ✏️ Change this -->
+              <span class="text-white/55">Website Designing</span>
+            </div>
+
+            <!-- Icon + Title -->
+            <div class="animate-fade-up delay-100 flex items-center gap-4 mb-5">
+              <!-- ✏️ Change icon -->
+              <div
+                class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-[28px] text-white shrink-0"
+              >
+                <i class="ti ti-layout-2"></i>
+              </div>
+              <div>
+                <p
+                  class="text-[11.5px] text-white/35 tracking-widest uppercase mb-1"
+                >
+                  Our Service
+                </p>
+                <!-- ✏️ Change service name -->
+                <h1
+                  class="text-[clamp(26px,4vw,46px)] font-bold text-white leading-[1.15]"
+                >
+                  Website Designing
+                </h1>
+              </div>
+            </div>
+
+            <!-- ✏️ Change description -->
+            <p
+              class="animate-fade-up delay-200 text-[14.5px] text-white/50 leading-[1.85] max-w-xl mb-7"
+            >
+              We create stunning, conversion-focused website designs tailored to
+              your brand. From landing pages to full corporate sites — our
+              designs attract visitors and turn them into loyal customers.
+            </p>
+
+            <!-- CTA buttons -->
+            <div class="animate-fade-up delay-300 flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/917042470564?text=Hi%20Senti%20Nava%20Web%20Solutions%2C%20I%27m%20interested%20in%20your%20Website%20Designing%20service."
+                target="_blank"
+                class="inline-flex items-center gap-2.5 bg-white text-[#0f0f0d] rounded-full px-6 py-3 text-[13px] font-medium hover:bg-white/90 transition-all"
+              >
+                Get a free quote
+                <span
+                  class="w-[22px] h-[22px] rounded-full bg-black/10 flex items-center justify-center text-[12px]"
+                >
+                  <i class="ti ti-arrow-right"></i>
+                </span>
+              </a>
+              <a
+                href="./services.html"
+                class="inline-flex items-center gap-2 border border-white/20 text-white/65 rounded-full px-6 py-3 text-[13px] font-medium hover:border-white/40 hover:text-white transition-all"
+              >
+                All services
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats on right -->
+          <div
+            class="animate-fade-up delay-200 flex flex-row lg:flex-col gap-4 flex-wrap lg:flex-nowrap lg:min-w-[200px]"
+          >
+            <!-- ✏️ Change stats as needed -->
+            <div
+              class="bg-white/8 border border-white/10 rounded-2xl px-5 py-4 flex-1 lg:flex-none"
+            >
+              <p class="text-[26px] font-bold text-white mb-0.5">200+</p>
+              <p class="text-[12px] text-white/40">Websites designed</p>
+            </div>
+            <div
+              class="bg-white/8 border border-white/10 rounded-2xl px-5 py-4 flex-1 lg:flex-none"
+            >
+              <p class="text-[26px] font-bold text-white mb-0.5">98%</p>
+              <p class="text-[12px] text-white/40">Client satisfaction</p>
+            </div>
+            <div
+              class="bg-white/8 border border-white/10 rounded-2xl px-5 py-4 flex-1 lg:flex-none"
+            >
+              <p class="text-[26px] font-bold text-white mb-0.5">7 days</p>
+              <p class="text-[12px] text-white/40">Avg. delivery time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <section class="w-full px-5 sm:px-8 lg:px-14 py-14 sm:py-18 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+        <div class="lg:col-span-2 flex flex-col gap-10">
+          <div
+            class="reveal w-full rounded-2xl overflow-hidden bg-[#e8e4db] border border-[#e0ddd0]"
+            style="aspect-ratio: 16/8"
+          >
+            <img
+              src="YOUR_SERVICE_IMAGE.jpg"
+              alt="Website Designing"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none"
+            >
+              <i class="ti ti-photo text-[36px] text-[#c5c1b6]"></i>
+              <span class="text-[13px] text-[#b5b2a8]"
+                >Add service image here</span
+              >
+            </div>
+          </div>
+
+          <!-- What we do -->
+          <div class="reveal">
+            <h2
+              class="text-[22px] sm:text-[26px] font-bold text-[#1a1a18] mb-4"
+            >
+              What we do
+            </h2>
+            <!-- ✏️ Change this paragraph -->
+            <p class="text-[14px] text-[#5a5a58] leading-[1.9] mb-4">
+              Our website designing service focuses on creating visually
+              stunning, user-friendly websites that represent your brand
+              perfectly. We combine modern design trends with conversion-focused
+              layouts to ensure your website not only looks great but also
+              delivers results.
+            </p>
+            <p class="text-[14px] text-[#5a5a58] leading-[1.9]">
+              Every design is custom-made — no templates, no shortcuts. We work
+              closely with you throughout the process to ensure the final
+              product exceeds your expectations.
+            </p>
+          </div>
+
+          <!-- What's included -->
+          <div class="reveal">
+            <h2
+              class="text-[22px] sm:text-[26px] font-bold text-[#1a1a18] mb-6"
+            >
+              What's included
+            </h2>
+            <!-- ✏️ Change these features -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Custom UI/UX design from scratch
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Mobile-responsive design for all devices
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Brand-aligned colour palette & typography
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Wireframes & mockups shared for approval
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Up to 3 design revisions included
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Fast turnaround — delivered in 7 days
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  SEO-friendly page structure
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 bg-white border border-[#e8e5da] rounded-xl px-4 py-3.5"
+              >
+                <span
+                  class="w-7 h-7 rounded-lg bg-[#f4f1ea] flex items-center justify-center text-[14px] text-[#1a1a18] shrink-0 mt-0.5"
+                  ><i class="ti ti-check"></i
+                ></span>
+                <p class="text-[13px] text-[#2c2c2a] leading-[1.6]">
+                  Post-delivery support & assistance
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Process steps -->
+          <div class="reveal">
+            <h2
+              class="text-[22px] sm:text-[26px] font-bold text-[#1a1a18] mb-6"
+            >
+              Our process
+            </h2>
+            <div class="flex flex-col gap-0">
+              <!-- ✏️ Change steps as needed -->
+              <div class="flex gap-4 pb-7 relative">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-[12px] font-bold shrink-0 z-10"
+                  >
+                    01
+                  </div>
+                  <div class="w-px flex-1 bg-[#e0ddd0] mt-2"></div>
+                </div>
+                <div class="pt-1.5 pb-2">
+                  <h4 class="text-[14.5px] font-semibold text-[#1a1a18] mb-1">
+                    Discovery Call
+                  </h4>
+                  <p class="text-[13px] text-[#5a5a58] leading-[1.75]">
+                    We understand your brand, goals, target audience, and design
+                    preferences.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4 pb-7 relative">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-9 h-9 rounded-full bg-white border-2 border-[#e0ddd0] text-[#1a1a18] flex items-center justify-center text-[12px] font-bold shrink-0 z-10"
+                  >
+                    02
+                  </div>
+                  <div class="w-px flex-1 bg-[#e0ddd0] mt-2"></div>
+                </div>
+                <div class="pt-1.5 pb-2">
+                  <h4 class="text-[14.5px] font-semibold text-[#1a1a18] mb-1">
+                    Wireframe & Concept
+                  </h4>
+                  <p class="text-[13px] text-[#5a5a58] leading-[1.75]">
+                    We create wireframes and initial concepts for your review
+                    and feedback.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4 pb-7 relative">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-9 h-9 rounded-full bg-white border-2 border-[#e0ddd0] text-[#1a1a18] flex items-center justify-center text-[12px] font-bold shrink-0 z-10"
+                  >
+                    03
+                  </div>
+                  <div class="w-px flex-1 bg-[#e0ddd0] mt-2"></div>
+                </div>
+                <div class="pt-1.5 pb-2">
+                  <h4 class="text-[14.5px] font-semibold text-[#1a1a18] mb-1">
+                    Design & Revisions
+                  </h4>
+                  <p class="text-[13px] text-[#5a5a58] leading-[1.75]">
+                    Full design is crafted and refined based on your feedback —
+                    up to 3 revisions.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-9 h-9 rounded-full bg-white border-2 border-[#e0ddd0] text-[#1a1a18] flex items-center justify-center text-[12px] font-bold shrink-0 z-10"
+                  >
+                    04
+                  </div>
+                </div>
+                <div class="pt-1.5">
+                  <h4 class="text-[14.5px] font-semibold text-[#1a1a18] mb-1">
+                    Final Delivery
+                  </h4>
+                  <p class="text-[13px] text-[#5a5a58] leading-[1.75]">
+                    Final design files delivered in all required formats with
+                    full ownership.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Sticky sidebar (1/3 width) -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 flex flex-col gap-4">
+            <!-- Quote card -->
+            <div class="reveal bg-black rounded-2xl p-6 flex flex-col gap-4">
+              <div
+                class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-[20px] text-white"
+              >
+                <!-- ✏️ Change icon -->
+                <i class="ti ti-layout-2"></i>
+              </div>
+              <div>
+                <h3 class="text-[16px] font-semibold text-white mb-1.5">
+                  Interested in this service?
+                </h3>
+                <p class="text-[12.5px] text-white/50 leading-[1.7]">
+                  Get a free quote today — no obligation, no hidden charges.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/917042470564?text=Hi%20Senti%20Nava%20Web%20Solutions%2C%20I%27m%20interested%20in%20Website%20Designing%20and%20would%20like%20a%20free%20quote."
+                target="_blank"
+                class="inline-flex items-center justify-center gap-2.5 bg-white text-[#0f0f0d] rounded-full px-5 py-3 text-[13px] font-medium hover:bg-white/90 transition-all w-full"
+              >
+                Get free quote
+                <span
+                  class="w-[20px] h-[20px] rounded-full bg-black/10 flex items-center justify-center text-[11px]"
+                >
+                  <i class="ti ti-arrow-right"></i>
+                </span>
+              </a>
+              <a
+                href="tel:+917042470564"
+                class="inline-flex items-center justify-center gap-2 border border-white/15 text-white/60 rounded-full px-5 py-3 text-[13px] font-medium hover:border-white/30 hover:text-white transition-all w-full"
+              >
+                <i class="ti ti-phone text-[14px]"></i> Call us now
+              </a>
+            </div>
+
+            <!-- Quick info -->
+            <div
+              class="reveal bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+            >
+              <h4
+                class="text-[12px] font-semibold text-[#8a8a88] tracking-widest uppercase"
+              >
+                Quick info
+              </h4>
+              <!-- ✏️ Change these details -->
+              <div
+                class="flex items-center justify-between py-2.5 border-b border-[#f0ede4]"
+              >
+                <span class="text-[13px] text-[#5a5a58]">Delivery time</span>
+                <span class="text-[13px] font-semibold text-[#1a1a18]"
+                  >5–7 days</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between py-2.5 border-b border-[#f0ede4]"
+              >
+                <span class="text-[13px] text-[#5a5a58]">Revisions</span>
+                <span class="text-[13px] font-semibold text-[#1a1a18]"
+                  >Up to 3</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between py-2.5 border-b border-[#f0ede4]"
+              >
+                <span class="text-[13px] text-[#5a5a58]">Starting from</span>
+                <span class="text-[13px] font-semibold text-[#1a1a18]"
+                  >₹4,999</span
+                >
+              </div>
+              <div class="flex items-center justify-between py-2.5">
+                <span class="text-[13px] text-[#5a5a58]">Support</span>
+                <span class="text-[13px] font-semibold text-[#1a1a18]"
+                  >30 days free</span
+                >
+              </div>
+            </div>
+
+            <!-- Other services -->
+            <div
+              class="reveal bg-white border border-[#e8e5da] rounded-2xl p-5 flex flex-col gap-3"
+            >
+              <h4
+                class="text-[12px] font-semibold text-[#8a8a88] tracking-widest uppercase mb-1"
+              >
+                Other services
+              </h4>
+              <!-- ✏️ Change/add links to other service detail pages -->
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >Website Development</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >E-Commerce Design</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >SEO & SMO</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >Digital Marketing</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >Mobile App Development</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-between py-2 border-b border-[#f0ede4] hover:text-black transition-colors group"
+              >
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >Logo Designing</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+              <a href="#" class="flex items-center justify-between py-2 group">
+                <span
+                  class="text-[13px] text-[#5a5a58] group-hover:text-[#1a1a18]"
+                  >Content Writing</span
+                >
+                <i
+                  class="ti ti-arrow-right text-[12px] text-[#ccc] group-hover:text-[#1a1a18] transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/common.js"></script>
+  </body>
+</html>
